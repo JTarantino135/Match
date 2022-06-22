@@ -1,49 +1,148 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1 class="page-title">Disney Match</h1>
-        <div class="game-container">
-            <div class="game-info-container">
-                <div class="game-info">
-                    Time <span id="time-remaining">100</span>
-                </div>
-                <div class="game-info">
-                    Flips <span id="time-remaining">0</span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    
-                </div>
-                <div class="card-front card-face">
-                   <img class="mickey" src="mickey mouse.png">
-                </div>
-            </div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
-        
-        <script src="style.js" async defer></script>
+<head>
+  <title>Mix-Or-Match</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="style.css" rel="stylesheet">
+<title>Mix-Or-Match</title>
+<body>
+  <h1 class="page-title">Disney Match</h1>
+  <div class="overlay-text visible">
+    Click to Play
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="mickey mouse.png" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face"> 
+        <img class="card-value" src="Minnie_Mouse_pose_.webp" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Screen_Shot_2020_10_23_at_11.47.44_AM.png.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="dumbo.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="stitch.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Pinocchio.webp" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="cinderella.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="jasmine.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="mickey mouse.png" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Minnie_Mouse_pose_.webp" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Screen_Shot_2020_10_23_at_11.47.44_AM.png.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="stitch.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Pinocchio.webp" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="cinderella.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="jasmine.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="dumbo.jpeg" height="175px" width="125px">
+      </div>
+    </div>
+  </div>
+      <script src="style.js"></script>
     </body>
 </html>
