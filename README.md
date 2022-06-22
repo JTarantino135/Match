@@ -1,4 +1,4 @@
-# Match
+# Matching Game
 Mix and Match game for milestone project
 
 ---
@@ -8,5 +8,5 @@ I have put together some of my favorite disney characters and made it into a mix
 
 ---
 
-## _insperation_
+## _Insperation_
 I loved watching disney growing up as a kid. The background of it gives off really nice vibes and takes you back to being a kid seeing these old characters and playing an old simple comupter game.
